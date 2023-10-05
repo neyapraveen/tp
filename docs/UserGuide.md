@@ -159,17 +159,26 @@ Expected Output (Failure):
 
 ### Deleting a person : `delete`
 
-Deletes the specified person from the address book.
+Deletes all personal details from the system based on email.
 
-Format: `delete INDEX`
+Format: `delete EMAIL`
 
-* Deletes the person at the specified `INDEX`.
-* The index refers to the index number shown in the displayed person list.
-* The index **must be a positive integer** 1, 2, 3, …​
+* Deletes the person with the specified `EMAIL`.
+* The email refers to the email shown in the displayed person list.
+* The email must be registered in the system
 
 Examples:
-* `list` followed by `delete 2` deletes the 2nd person in the address book.
-* `find Betsy` followed by `delete 1` deletes the 1st person in the results of the `find` command.
+* `list` followed by `delete alexy@u.nus.edu` deletes Alex, who has the corresponding email in the address book.
+
+Acceptable values: 
+* Email: a previously registered email address ending in `@u.nus.edu`
+
+#### Expected Output(Success):
+* GUI: Student details removed from student list.
+* Message: “Details removed successfully!"
+
+#### Expected Output(Failure):
+* Message: “Error: Email not found.”
 
 ### Clearing all entries : `clear`
 
