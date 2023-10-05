@@ -50,15 +50,15 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 * Role: Developer
 * Responsibilities: Deliverables & Deadlines + Scheduling & Tracking
 
-### Jean Doe
+### Dewangan Neya Praveen
 
-<img src="images/johndoe.png" width="200px">
+<img src="images/neyapraveen.png" width="200px">
 
-[[github](http://github.com/johndoe)]
-[[portfolio](team/johndoe.md)]
+[[github](http://github.com/neyapraveen)]
+[[portfolio](team/neyapraveen.md)]
 
 * Role: Developer
-* Responsibilities: Dev Ops + Threading
+* Responsibilities: Code Quality
 
 ### James Doe
 
