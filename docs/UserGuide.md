@@ -180,7 +180,7 @@ Acceptable Values:
 
 Expected Output(Success):
 * GUI: Student details removed from student list.
-* Message: `[Name] deleted successfully!`
+* Message: `Person deleted successfully!`
   ![Delete feature](images/delete.png)
 
 Expected Output (Failure):

@@ -10,7 +10,8 @@ import static seedu.address.commons.util.AppUtil.checkArgument;
 public class Major {
 
     public static final String MESSAGE_CONSTRAINTS = "Majors should not be blank and must be a valid"
-            + " major offered at NUS.";
+            + "major offered at NUS.";
+  
     private static final String[] VALID_NUS_MAJORS = {
         "Accounting",
         "Actuarial Studies",
@@ -52,6 +53,7 @@ public class Major {
         "Urban Studies",
         "Visual Communications",
     };
+    
     public final String value;
 
     /**

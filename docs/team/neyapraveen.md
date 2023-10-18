@@ -13,12 +13,14 @@ Given below are my contributions to the project.
 * [RepoSense link]()
 
 ## Enhancements implemented
-* to be added soon
+* Changed `delete` feature to delete by email rather than by index.
+* Changed test cases pertaining to `delete` feature
 
 ## Contributions to the UG
 * Added documentation for the feature `delete`.
 
 ## Contributions to the DG
+* Updated initial contents in DG after discussion(target user profile, value proposition, user stories, use cases, NFRs, Glossary )
 * Under Use-cases, the feature `delete`.
 
 ## Contributions to team-based tasks

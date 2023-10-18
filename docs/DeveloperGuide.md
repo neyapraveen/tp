@@ -440,7 +440,7 @@ testers are expected to do more *exploratory* testing.
    1. Test case: `delete 0`<br>
       Expected: No person is deleted. Error details shown in the status message. Status bar remains the same.
 
-   1. Other incorrect delete commands to try: `delete`, `delete abc@gmail.com`, `...` (where x is larger than the list size)<br>
+   1. Other incorrect delete commands to try: `delete`, `delete abc@gmail.com`, `delete 1`<br>
       Expected: Similar to previous.
 
 1. _{ more test cases …​ }_
