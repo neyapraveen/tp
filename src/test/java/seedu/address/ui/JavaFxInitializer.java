@@ -5,6 +5,8 @@ import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
 import javafx.stage.Stage;
 
+import java.awt.*;
+
 /**
  * A utility class for initializing and cleaning up JavaFX for testing.
  */
@@ -17,7 +19,9 @@ public class JavaFxInitializer {
      */
     public static void initialize() {
         if (!initialized) {
-            new JFXPanel(); // Initializes JavaFX environment
+            if (!GraphicsEnvironment.isHeadless()) {
+                new JFXPanel(); // Initializes JavaFX environment
+            }
             initialized = true;
         }
     }

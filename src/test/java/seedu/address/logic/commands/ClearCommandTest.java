@@ -49,6 +49,7 @@ public class ClearCommandTest {
         // Act
         Platform.runLater(() -> {
             try {
+                JavaFxInitializer.initialize(); // Manually initialize JavaFX
                 CommandResult commandResult = clearCommand.execute(modelStub);
 
                 // Assert
@@ -60,9 +61,12 @@ public class ClearCommandTest {
                 assertEquals(0, modelStub.getAddressBook().getPersonList().size());
             } catch (CommandException e) {
                 // Handle exception
+            } finally {
+                JavaFxInitializer.cleanup(); // Manually clean up JavaFX
             }
         });
     }
+
 
     @Test
     public void execute_clearCommandNotConfirmed_success() throws CommandException {
