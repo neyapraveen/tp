@@ -1,7 +1,5 @@
 package seedu.address.ui;
 
-import java.awt.GraphicsEnvironment;
-
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
@@ -20,12 +18,11 @@ public class JavaFxInitializer {
      */
     public static void initialize() {
         if (!initialized) {
-            if (!GraphicsEnvironment.isHeadless()) {
-                new JFXPanel(); // Initializes JavaFX environment
-            }
+            new JFXPanel(); // Initializes JavaFX environment
             initialized = true;
         }
     }
+
 
     /**
      * Cleans up the JavaFX initialization if needed.
