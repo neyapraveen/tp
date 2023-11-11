@@ -1,11 +1,12 @@
 package seedu.address.ui;
 
+import java.awt.GraphicsEnvironment;
+
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
 import javafx.stage.Stage;
 
-import java.awt.*;
 
 /**
  * A utility class for initializing and cleaning up JavaFX for testing.
